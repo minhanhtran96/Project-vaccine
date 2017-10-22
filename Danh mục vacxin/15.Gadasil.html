@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>15.Gadasil</title>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/Homepage.css">
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/danhmucvacxin.css">
+
+
+</head>
+<body>
+<!--Start đầu tiên-->
+<div class="container-fluid" style="background-color: #662D91; height: 60px">
+    <img src="images/Untitled-2.png" style=" max-height: 60px; margin-left: 50px; margin-top: 30px"/>
+</div>
+<!--Start Navigation Bar-->
+<div class="container-fluid" id="dep" style="background-color: #662D91">
+    <nav class="navbar-right" id = "bgnav">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <!--Kiến thức chung-->
+                    <li class="dropdown" style="color: #662D91">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><strong>KIẾN THỨC CHUNG</strong><span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Page 1-1</a></li>
+                            <li><a href="#">Page 1-2</a></li>
+                            <li><a href="#">Page 1-3</a></li>
+                        </ul>
+                        <!--danh mục vaccin-->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><strong>DANH MỤC VACCIN</strong><span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Page 1-1</a></li>
+                            <li><a href="#">Page 1-2</a></li>
+                            <li><a href="#">Page 1-3</a></li>
+                        </ul>
+                    </li>
+                    <!--danh sách phòng tiêm-->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><strong>DANH SÁCH PHÒNG TIÊM</strong><span class="caret"></span></a>
+                        <div>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Page 1-1</a></li>
+                                <li><a href="#">Page 1-2</a></li>
+                                <li><a href="#">Page 1-3</a></li>
+                            </ul>
+                        </div>
+
+                    </li>
+                    <!--lịch tiêm chủng-->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><strong>LỊCH TIÊM CHỦNG</strong><span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Page 1-1</a></li>
+                            <li><a href="#">Page 1-2</a></li>
+                            <li><a href="#">Page 1-3</a></li>
+                        </ul>
+                    </li>
+                    <!--hỏi đáp-->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><strong>HỎI ĐÁP</strong><span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Page 1-1</a></li>
+                            <li><a href="#">Page 1-2</a></li>
+                            <li><a href="#">Page 1-3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+<!--End Navigation Bar-->
+<!--Start Content-->
+<!--Start Slide anh-->
+<div class="row">
+    <DIV class="container-fluid">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="images/banner-medical-equipment-for-obesity-treatment.jpg" style="width:100%">
+                <div class="text">Caption Text</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="images/header.jpg" style="width:100%">
+                <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="images/slide2.jpg" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <script>
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+                setTimeout(showSlides, 6000); // Change image every 2 seconds
+            }
+        </script>
+    </DIV>
+</div><!--container-->
+<!--End Slide anh-->
+<div class="container">
+    <!--Start row 1-->
+    <div class="row" style="padding-top: 15px">
+        <!--Start Video-->
+        <div class="col-xs-12 col-sm-6 col-md-9">
+            <!--start video-->
+            <div class="row">
+                <h3 style="text-align: left; font-weight:bold; text-decoration: underline">THÔNG TIN SẢN PHẨM VẮC XIN</h3>
+                <h4 style="text-align: center; font-weight: bold">GARDASIL – VẮC XIN PHÒNG UNG THƯ CỔ TỬ CUNG</h4>
+                <img src="images/15.GARDASIL.jpg" height="300" width="620"/>
+                <h4 style="text-align: right; font-style: italic">Nguồn: Mims.com</h4>
+                <table align="left" width="850px">
+                    <tr>
+                        <td>Nguồn gốc</td>
+                        <td>Merck Sharp and Dohm (Mỹ)</td>
+                    </tr>
+                    <tr>
+                        <td>Chỉ định</td>
+                        <td>Gardasil được chỉ định cho trẻ em và vị thành niên trong độ tuổi từ 9-17 tuổi và phụ nữ trong độ tuổi từ 9-26 tuổi để phòng ngừa ung thư cổ tử cung, âm hộ, âm đạo, các tổn thương tiền ung thư và loạn sản, mụn cóc sinh dục và bệnh lý do nhiễm virus HPV.</br>
+                            Do đó Gardasil được dùng để ngừa các bệnh sau đây:</br>
+                            –  Ung thư cổ tử cung và âm hộ, âm đạo gây ra bởi HPV tuýp 16 và 18.</br>
+                            –  Mụn cóc sinh dục (mào gà sinh dục) gây ra bởi HPV tuýp 6 và 11.</br>
+                            –  Nhiễm và bị các tổn thương tiền ung thư hoặc loạn sản gây ra bởi HPV tuýp 6, 11, 16 và 18.</br>
+                            –  Tân sinh trong biểu mô cổ tử cung độ 2/3 và ung thư biểu mô tuyến tử cung tại chỗ.</br>
+                            –  Tân sinh biểu mô cổ tử cung độ 1.</br>
+                            –  Tân sinh trong biểu mô âm hộ độ 2 và 3.</br>
+                            –  Tân sinh trong biểu mô âm đạo độ 2 và 3.</br>
+                            –  Tân sinh trong biểu mô âm hộ và tân sinh trong biểu mô âm đạo độ 1.</br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Lịch tiêm chủng</td>
+                        <td>
+                            Gồm 3 mũi</br>
+                            -Mũi 1: là ngày tiêm mũi đầu tiên.</br>
+                            -Mũi 2: 2 tháng sau mũi đầu tiên.</br>
+                            -Mũi 3: 6 tháng sau liều đầu tiên.</br>
+                            Khi cần điều chỉnh lịch tiêm thì mũi 2 phải cách mũi 1 tối thiểu là 1 tháng và mũi 3 phải cách mũi 2 tối thiểu 3 tháng.</br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Đường dùng</td>
+                        <td>Tiêm bắp với liều 0.5ml vào vùng cơ Delta vào phần trên cánh tay hoặc phần trước bên của phía trên đùi.</br>
+                            Không được tiêm tĩnh mạch. Chưa có nghiên cứu về đường tiêm trong da hoặc dưới da nên không có khuyến cáo tiêm theo hai đường tiêm này</br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Chống chỉ định</td>
+                        <td>
+                            Người mẫn cảm với các thành phần có trong vaccine.</br>
+                            Không được tiếp tục dùng Gardasil nếu có phản ứng quá mẫn với lần tiêm trước
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Thận trọng khi sử dụng</td>
+                        <td>
+                            -Trên phụ nữ có thai:</br>
+                            Chưa có nghiên cứu đầy đủ về việc tiêm vaccine Gardasil trên phụ nữ có thai vì vậy tránh mang thai trong thời kỳ tiêm chủng Gardasil. Nếu có thai trong giai đoạn chưa hoàn thành 3 mũi tiêm thì cần hoãn tiêm chủng để giải quyết xong thai kỳ.</br>
+                            Chưa có bằng chứng nào gợi ý cho việc sử dung Gardasil làm ảnh hưởng gây hại đến khả năng sinh sản, tình trạng mang thai hoặc gây hậu quả cho trẻ sơ sinh.</br>
+                            -Trên phụ nữ cho con bú: có thể sử dụng Gardasil cho đối tượng này. Vẫn chưa rõ kháng nguyên của vaccine và kháng thể từ mẹ có bài tiết qua sữa được không</br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tác dụng không mong muốn</td>
+                        <td>
+                            -Phản ứng tại chỗ tiêm: sưng đau, có ban đỏ, hay gặp bầm tím và ngứa.</br>
+                            -Rất hiếm gặp: co thắt khí quản nghiêm trọng</br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tương tác thuốc</td>
+                        <td>
+                            -Có thể dùng Gardasil cùng thời điểm với các vaccine khác như: vaccine viêm gan B tái tổ hợp, vaccine liên hợp não mô cầu nhóm A, C, D; vaccine bạch hầu- ho gà- uốn ván nhưng phải tiêm ở các vị trí khác nhau.</br>
+                            -Đã có những thử nghiệm lâm sàng khi dùng Gardasil cùng với các thuốc: kháng sinh, nội tiết ngừa thai, các steroid; kết quả cho thấy các thuốc trên không làm ảnh hưởng đến đáp ứng miễn dịch đối với Gardasil
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Bảo quản</td>
+                        <td>Vaccine được bảo quản ở nhiệt độ từ 2-80C, không được đông băng và tránh ánh sáng.</br>
+                            Khi đưa ra khỏi tủ bảo quản nên sử dụng vaccine ngay nhưng cũng có thể để ngoài nhiệt độ phòng < 250C trong thời gian 3 ngày mà không bị ảnh hưởng đến chất lượng vaccine. Sau 3 ngày vaccine cần được loại bỏ.</td>
+                    </tr>
+                </table>
+                <br/>
+                <br/>
+            </div>
+            <br/>
+            <!--end video-->
+            <!--start 3 ô-->
+            <div class="row">
+                <!--ô 1-->
+                <div class="col-xs-4 col-sm-4 col-md-4" align="center">
+                    <div id="dep" class="panel">
+                        <div class="panel-heading" style="background-color: #662d91">
+                            <img class="img-responsive" src="images/icons8-Calendar-50.png" height="50" width="50"/></div>
+                        <div class="panel-body"><h3 class="text-uppercase"><strong>LỊCH TIÊM CHỦNG</strong></h3>
+                        </div>
+                    </div>
+                </div>
+                <!--ô 2-->
+                <div class="col-xs-4 col-sm-4 col-md-4" align="center">
+                    <div id="dep" class="panel">
+                        <div class="panel-heading" style="background-color: #662d91">
+                            <img class="img-responsive" src="icons8-Vaccine%20Drop%20Filled-50.png" height="50" width="50"/></div>
+                        <div class="panel-body"><h3 class="text-uppercase"><strong>DANH MỤC VACCIN</strong></h3>
+                        </div>
+                    </div>
+                </div>
+                <!--Ô 3-->
+                <div class="col-xs-4 col-sm-4 col-md-4" align="center">
+                    <div id="dep" class="panel">
+                        <div class="panel-heading" style="background-color: #662d91">
+                            <img CLASS="img-responsive" src="images/icons8-Map%20Marker-64%20(1).png" height="50" width="50"/></div>
+                        <div class="panel-body"><h3 class="text-uppercase"><strong style="align-items: center">ĐỊA CHỈ TIÊM PHÒNG</strong></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end 3 ô-->
+            <!--start quote-->
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="panel panel-default panel-body" id="quote">
+                        <h2 class="text-uppercase">CHÚNG TÔI LÀ AI?</h2>
+                        <blockquote class="blockquote-reverse">
+                            <p>Là phụ nữ, chúng tôi có chung mối quan tâm tới bảo vệ sức khỏe cho gia đình mình<br>thông qua tiêm vắc xin phòng bệnh và mong muốn chia sẻ kiến thức về tiêm chủng, vắc xin<br>tới các phụ nữ khác và cả cộng đồng thông qua website này! </p>
+                            <footer>Đội ngũ G7</footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            <!--end quote-->
+        </div><!--end md 9-->
+        <!--End Video-->
+        <!--Start Tin tuc-->
+        <div class="col-xs-12 col-sm-3 col-md-3" align="center">
+            <div id="dep" class="panel" style="border: 0px" id="accordion">
+                <!--tra cứu-->
+                <div class="panel-group">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"><STRONG>TRA CỨU NHANH</STRONG></a>
+                        </h4>
+                    </div>
+                    <!-- TÌM KIẾM -->
+                    <div id="collapse1" class="panel-collapse collapse in">
+                        <div id="timkiem" class="panel-body">
+                            <form class="navbar-form navbar-left">
+                                <div class="input-group">
+                                    <input class="form-control" placeholder="Search">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-default">
+                                            <i class="glyphicon glyphicon-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!--tin tức-->
+                <div class="panel-group">
+                    <div id="tintuc" class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2"><STRONG>TIN TỨC</STRONG></a>
+                        </h4>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse">
+                        <div class="panel-group">
+                            <!--tin 1-->
+                            <div class="media">
+                                <img src="images/tai_xuong.jpg" height="168" width="199"/>
+                            </div>
+                            <div class="panel-footer">
+                                <strong class="text-uppercase headertintuc"><a href="https://www.baomoi.com/ha-noi-lai-khan-hiem-vac-xin-dich-vu-5-trong-1-pentaxim/c/22676482.epi">Hà Nội lại khan hiếm vắc xin dịch vụ '5 trong 1' Pentaxim</a></strong>
+                                <p>Từ nhiều ngày nay, tại hầu hết các trung tâm tiêm chủng dịch vụ trên địa bàn Hà Nội đã trưng biển hết vaccine “5 trong 1” Pentaxim.</p>
+                            </div>
+                            <!--tin 2-->
+                            <div class="media">
+                                <img src="images/tai_xuong.jpg" height="168" width="199"/>
+                            </div>
+                            <div class="panel-footer">
+                                <strong class="text-uppercase headertintuc"><a href="http://dantri.com.vn/suc-khoe/vac-xin-bai-liet-sap-duoc-su-dung-co-an-toan-voi-tre-20160526111912982.htm">Vắc xin bại liệt sắp được sử dụng có an toàn với trẻ?</a></strong>
+                                <p>“Sau khi uống vắc xin bại liệt, trẻ rất hiếm gặp các dấu hiệu bất thường như đau cơ, yếu cơ, liệt…”, lãnh đạo Viện Vệ sinh dịch tễ Trung ương khẳng định.</p>
+                            </div>
+                            <!--tin 3-->
+                            <div class="media">
+                                <img src="images/tai_xuong.jpg" height="168" width="199"/>
+                            </div>
+                            <div class="panel-footer">
+                                <strong class="text-uppercase headertintuc"><a href="http://vietnamnet.vn/vn/suc-khoe/cac-loai-benh/tiem-vac-xin-ngua-hpv-va-ung-thu-co-tu-cung-382264.html">Phòng chống ung thư cổ tử cung bằng vacxin ngừa HPV</a></strong>
+                                <p>Mỗi năm trên thế giới có gần 500.000 người mắc ung thư cổ tử cung, trên 270.000 trường hợp tử vong do bệnh này. Bởi vậy, ngăn ngừa sớm virus gây bệnh cần được chú trọng.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--panel-->
+            </div><!--panel group-->
+        </div><!--col md-->
+    </div><!--end tin tức 1-->
+</div><!--end row 1-->
+<!-- start footer-->
+<div class="container-fluid" style="background-color: #662d91">
+    <H1 id="footer">THÔNG TIN LIÊN HỆ:</H1>
+    <div id="photos" class="row" align="center" style="color: white; width: 100%; font-size: 20px; margin-right: 0px;margin-left: 0px">
+        <!--chị Ngọc Anh-->
+        <div class="col-xs-3 col-sm-3 col-md-3">
+            <div class="panel-group">
+                <div class="panel-heading thu">
+                    <img class="image" id="dep" style="border-radius: 50px; max-height: 100px" src="images/ngocanh.jpg" />
+                    <div class="overlay">
+                        <div class="text"><img src="images/icons8-Mail-50%20(1).png" height="50" width="50"/></div>
+                    </div>
+                </div>
+                <div class="panel-body ten"><p>Ms. Phan Lê Ngọc Anh</p></div>
+            </div>
+        </div>
+        <!--chị Quý-->
+        <div class="col-xs-3 col-sm-3 col-md-3">
+            <div class="panel-group">
+                <div class="panel-heading thu">
+                    <img class="image" id="dep" style="border-radius: 50px; max-height: 100px" src="images/quy.jpg" />
+                    <div class="overlay">
+                        <div class="text"><img src="images/icons8-Mail-50%20(1).png" height="50" width="50"/></div>
+                    </div>
+                </div>
+                <div class="panel-body ten"><p>Ms. Trần T. Thanh Quý</p></div>
+            </div>
+        </div>
+        <!--chị Thỏa-->
+        <div class="col-xs-3 col-sm-3 col-md-3">
+            <div class="panel-group">
+                <div class="panel-heading thu">
+                    <img class="image" id="dep" style="border-radius: 50px; max-height: 100px" src="images/Untitled-1.jpg" />
+                    <div class="overlay">
+                        <div class="text"><img src="images/icons8-Mail-50%20(1).png" height="50" width="50"/></div>
+                    </div>
+                </div>
+                <div class="panel-body ten"><p>Ms. Hoàng T. Thu Thỏa</p></div>
+            </div>
+        </div>
+        <!--Minh Anh-->
+        <div class="col-xs-3 col-sm-3 col-md-3">
+            <div class="panel-group">
+                <div class="panel-heading thu">
+                    <img class="image" id="dep" style="border-radius: 50px; max-height: 100px" src="images/minhanh.jpg" />
+                    <div class="overlay">
+                        <div class="text"><img src="images/icons8-Mail-50%20(1).png" height="50" width="50"/></div>
+                    </div>
+                </div>
+                <div class="panel-body ten"><p>Ms. Trần Minh Anh</p></div>
+            </div>
+        </div>
+    </div>
+</div><!--container-fluid -->
+<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+
