@@ -170,7 +170,11 @@ ul li a{
     transition: .5s ease;
     background-color: #662D91;
 }
-
+.col-md-12 img{
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 20px;
+}
 .panel-group:hover .overlay {
     opacity: 1;
 }
