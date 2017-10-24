@@ -43,9 +43,15 @@ p{
     li strong{
         font-size: 12px;
     }
+    a h3 strong{
+        font-size: 12px;
+    }
 }
 @media only screen and (min-width: 810px) and (max-width:1009px){
     li strong{
+        font-size: 13px;
+    }
+    a h3 strong{
         font-size: 13px;
     }
 }
@@ -53,6 +59,10 @@ p{
     li strong {
         font-size: 18px;
     }
+    a h3 strong{
+        font-size: 18px;
+    }
+
 }
 .headertintuc{
     font-family: "VNF-Bodoni Regular", serif;
